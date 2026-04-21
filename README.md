@@ -14,6 +14,10 @@ The platform has strong growth, but not every order is equally valuable. Some cu
 
 This project shows how a data analyst can turn messy operating data into practical decisions for commercial, operations, and customer teams. The analysis focuses on where the company earns margin, where discounts may be wasteful, and which delivery issues should be fixed first.
 
+## Data Source
+
+The dataset is synthetic and was created for this portfolio case study. It is designed to behave like realistic food delivery operating data, with order-level revenue, discount, delivery, customer, restaurant, rating, and repeat-order fields. This approach keeps the project public and shareable while still allowing meaningful cleaning, analysis, SQL, Excel, and Power BI work.
+
 ## Tools Used
 
 - Python for cleaning, wrangling, EDA, statistics, segmentation, and ML basics
