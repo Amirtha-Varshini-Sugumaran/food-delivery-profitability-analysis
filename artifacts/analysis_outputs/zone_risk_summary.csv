@@ -1,0 +1,29 @@
+city,zone,orders,delay_rate,avg_delay_minutes,avg_rating,gross_profit
+Mumbai,Andheri,139,0.92,20.77,3.74,12475.13
+Bengaluru,Whitefield,68,0.9,22.15,3.57,5506.02
+Delhi Ncr,Gurugram,112,0.89,20.92,3.75,10850.8
+Hyderabad,Hitech City,108,0.88,20.32,3.76,12515.58
+Chennai,Anna Nagar,143,0.83,16.36,3.73,15246.59
+Kolkata,Park Street,105,0.82,19.21,3.74,9943.54
+Delhi Ncr,Saket,111,0.81,15.43,3.75,10767.7
+Kolkata,New Town,125,0.79,13.02,3.8,14648.74
+Chennai,Omr,136,0.78,15.38,3.7,14848.19
+Pune,Viman Nagar,107,0.78,13.86,3.68,9999.53
+Hyderabad,Secunderabad,135,0.77,13.28,3.81,14673.96
+Chennai,T Nagar,148,0.77,16.69,3.73,15001.19
+Mumbai,Bandra,109,0.76,13.69,3.73,10886.96
+Bengaluru,Electronic City,65,0.75,15.23,3.68,5992.09
+Pune,Kothrud,117,0.75,14.38,3.77,11832.31
+Hyderabad,Gachibowli,103,0.75,15.42,3.79,11544.84
+Pune,Hinjewadi,103,0.73,12.75,3.87,9488.9
+Mumbai,Lower Parel,143,0.73,15.18,3.9,14931.62
+Delhi Ncr,Dwarka,106,0.73,14.88,3.82,12258.74
+Kolkata,Howrah,133,0.72,14.42,3.72,14734.8
+Pune,Koregaon Park,128,0.72,13.11,3.85,12835.67
+Bengaluru,Indiranagar,78,0.72,14.23,3.76,7619.83
+Mumbai,Powai,124,0.72,15.84,3.82,12426.51
+Delhi Ncr,Noida,110,0.71,12.46,3.91,10985.98
+Chennai,Velachery,143,0.69,12.35,3.76,14977.09
+Hyderabad,Banjara Hills,123,0.68,12.12,3.79,13429.95
+Bengaluru,Koramangala,71,0.68,15.44,3.81,7053.49
+Kolkata,Salt Lake,103,0.67,13.01,3.91,9826.0

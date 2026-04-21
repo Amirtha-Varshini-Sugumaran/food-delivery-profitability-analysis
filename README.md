@@ -18,9 +18,18 @@ This is the kind of analysis a delivery platform needs once growth starts becomi
 
 - Python for cleaning, wrangling, EDA, statistics, segmentation, and ML basics
 - SQL for repeatable business analysis
-- Power BI for dashboard design
-- Excel for validation, pivots, and ad hoc business checks
+- Power BI for dashboard design and Power BI-ready reporting files
+- Excel for validation, pivots, KPI review, and workbook analysis
 - GitHub for project packaging
+
+## Main Deliverables
+
+- Excel workbook: `excel/food_delivery_profitability_workbook.xlsx`
+- Power BI-ready dataset: `powerbi/powerbi_ready_files/food_delivery_cleaned_for_powerbi.csv`
+- Power BI build guide: `powerbi/README_POWERBI.md`
+- Python scripts: `scripts/`
+- Jupyter notebooks: `notebooks/`
+- SQL analysis: `sql/`
 
 ## Repository Structure
 
@@ -28,6 +37,7 @@ This is the kind of analysis a delivery platform needs once growth starts becomi
 food-delivery-profitability-analysis/
 ├── data/
 ├── notebooks/
+├── scripts/
 ├── sql/
 ├── powerbi/
 ├── excel/

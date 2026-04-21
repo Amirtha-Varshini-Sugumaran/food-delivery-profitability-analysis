@@ -1,0 +1,5 @@
+discount_band,orders,avg_discount,avg_profit,repeat_rate,avg_rating
+High,374,107.97,40.22,0.41,3.76
+Low,940,31.15,118.63,0.45,3.79
+Medium,1248,64.33,83.44,0.43,3.76
+No Discount,638,0.0,152.33,0.53,3.8
