@@ -1,18 +1,18 @@
 # Food Delivery Profitability, Customer Retention, and Operational Performance Analysis
 
-## Short Summary
+## Project Snapshot
 
-This project analyses a fast-growing food delivery platform operating across major Indian cities, with a practical expansion lens that would also be useful for reviewing a smaller Irish market launch.
+End-to-end data analytics project for a fast-growing food delivery platform operating across major Indian cities. The analysis reviews profitability, discount efficiency, customer retention, delivery delays, ratings, and restaurant-zone performance.
 
-The company has grown order volume quickly, but leadership now needs a clearer view of profit quality, discount efficiency, delivery reliability, and retention. The analysis looks beyond order counts and asks where the company is actually making money, where discounts are leaking margin, and where operational problems are likely to damage repeat behaviour.
+The project is designed for quick recruiter review: it includes cleaned and raw datasets, Python analysis, SQL queries, Excel workbook outputs, Power BI-ready files, and business recommendations.
 
 ## Business Problem
 
 The platform has strong growth, but not every order is equally valuable. Some customers order often but only with high discounts. Some restaurant and zone combinations create repeated delays. Late deliveries appear to reduce ratings, and lower ratings can weaken repeat behaviour.
 
-## Why This Project Matters
+## Business Value
 
-This is the kind of analysis a delivery platform needs once growth starts becoming expensive. It combines Python, SQL, Excel checks, Power BI planning, statistics, segmentation, and a simple machine learning model.
+This project shows how a data analyst can turn messy operating data into practical decisions for commercial, operations, and customer teams. The analysis focuses on where the company earns margin, where discounts may be wasteful, and which delivery issues should be fixed first.
 
 ## Tools Used
 
@@ -22,29 +22,31 @@ This is the kind of analysis a delivery platform needs once growth starts becomi
 - Excel for validation, pivots, KPI review, and workbook analysis
 - GitHub for project packaging
 
-## Main Deliverables
+## Key Outputs
 
 - Excel workbook: `excel/food_delivery_profitability_workbook.xlsx`
+- Dashboard preview: `artifacts/recruiter_dashboard.md`
+- Openable HTML dashboard: `artifacts/food_delivery_dashboard.html`
 - Power BI-ready dataset: `powerbi/powerbi_ready_files/food_delivery_cleaned_for_powerbi.csv`
-- Power BI build guide: `powerbi/README_POWERBI.md`
+- Power BI dashboard specification: `powerbi/dashboard_spec.md`
 - Main Python analysis file: `scripts/05_full_python_analysis.py`
 - Supporting Python scripts: `scripts/`
 - Jupyter notebooks: `notebooks/`
 - SQL analysis: `sql/`
+- Business insights and recommendations: `insights/`
 
 ## Repository Structure
 
 ```text
 food-delivery-profitability-analysis/
-├── data/
-├── notebooks/
-├── scripts/
-├── sql/
-├── powerbi/
-├── excel/
-├── insights/
-├── artifacts/
-└── local_only/
+|-- data/
+|-- notebooks/
+|-- scripts/
+|-- sql/
+|-- powerbi/
+|-- excel/
+|-- insights/
+|-- artifacts/
 ```
 
 ## Key Questions Answered
@@ -74,6 +76,23 @@ food-delivery-profitability-analysis/
 - Restaurant-zone combinations are more useful for operations than restaurant rankings alone.
 - Repeat behaviour is best understood by looking at tenure, rating, discount pattern, profit quality, and delivery reliability together.
 
-## How To Use This Project In Interviews
+## Skills Demonstrated
 
-Use this project to show the full analysis lifecycle. Start with the business problem, then explain how you cleaned messy delivery data, created profitability and delay features, used SQL to answer business questions, applied statistics to test assumptions, designed a Power BI dashboard, and built a simple ML model for repeat order prediction.
+- Data cleaning and wrangling
+- Python analysis and reusable scripts
+- SQL business analysis
+- Excel workbook reporting
+- Power BI dashboard planning
+- KPI design
+- Statistical reasoning
+- Customer segmentation
+- Basic machine learning for repeat-order prediction
+- Business storytelling and recommendations
+
+## Quick Review Path
+
+1. Start with `insights/executive_summary.md`.
+2. Review `artifacts/recruiter_dashboard.md` or open `artifacts/food_delivery_dashboard.html` for the dashboard view.
+3. Open `excel/food_delivery_profitability_workbook.xlsx` for KPI and workbook output.
+4. Review `scripts/05_full_python_analysis.py` for the main Python analysis.
+5. Check `sql/analysis_queries.sql` and `sql/advanced_queries.sql` for SQL depth.
