@@ -27,7 +27,8 @@ This is the kind of analysis a delivery platform needs once growth starts becomi
 - Excel workbook: `excel/food_delivery_profitability_workbook.xlsx`
 - Power BI-ready dataset: `powerbi/powerbi_ready_files/food_delivery_cleaned_for_powerbi.csv`
 - Power BI build guide: `powerbi/README_POWERBI.md`
-- Python scripts: `scripts/`
+- Main Python analysis file: `scripts/05_full_python_analysis.py`
+- Supporting Python scripts: `scripts/`
 - Jupyter notebooks: `notebooks/`
 - SQL analysis: `sql/`
 
