@@ -1,4 +1,4 @@
-# Food Delivery Profitability, Customer Retention, and Operational Performance Analysis
+# Food Delivery Profitability Analysis
 
 ## Project Snapshot
 
