@@ -25,10 +25,7 @@ This project shows how a data analyst can turn messy operating data into practic
 ## Key Outputs
 
 - Excel workbook: `excel/food_delivery_profitability_workbook.xlsx`
-- Dashboard preview: `artifacts/recruiter_dashboard.md`
-- Openable HTML dashboard: `artifacts/food_delivery_dashboard.html`
 - Power BI-ready dataset: `powerbi/powerbi_ready_files/food_delivery_cleaned_for_powerbi.csv`
-- Power BI dashboard specification: `powerbi/dashboard_spec.md`
 - Main Python analysis file: `scripts/05_full_python_analysis.py`
 - Supporting Python scripts: `scripts/`
 - Jupyter notebooks: `notebooks/`
@@ -92,7 +89,7 @@ food-delivery-profitability-analysis/
 ## Quick Review Path
 
 1. Start with `insights/executive_summary.md`.
-2. Review `artifacts/recruiter_dashboard.md` or open `artifacts/food_delivery_dashboard.html` for the dashboard view.
-3. Open `excel/food_delivery_profitability_workbook.xlsx` for KPI and workbook output.
-4. Review `scripts/05_full_python_analysis.py` for the main Python analysis.
-5. Check `sql/analysis_queries.sql` and `sql/advanced_queries.sql` for SQL depth.
+2. Open `excel/food_delivery_profitability_workbook.xlsx` for KPI and workbook output.
+3. Review `scripts/05_full_python_analysis.py` for the main Python analysis.
+4. Check `sql/analysis_queries.sql` and `sql/advanced_queries.sql` for SQL depth.
+5. Use `powerbi/powerbi_ready_files/food_delivery_cleaned_for_powerbi.csv` as the source for the Power BI `.pbix` dashboard.
