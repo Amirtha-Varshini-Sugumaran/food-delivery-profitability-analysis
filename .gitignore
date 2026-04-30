@@ -5,3 +5,4 @@ __pycache__/
 .DS_Store
 local_only/
 local_only/interview_notes.md
+ENGINEERING_NOTES.md

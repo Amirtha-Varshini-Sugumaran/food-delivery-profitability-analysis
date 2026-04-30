@@ -22,10 +22,17 @@
 - Customer segmentation separates high-value loyal customers from high-volume low-margin customers.
 - The repeat-order scorecard accuracy is 63.91%. It is useful for prioritisation, not automated decision-making.
 
-## Analysis Outputs
+## Chart Output
+
+Chart PNGs were skipped because matplotlib is not installed in this local runtime. The CSV outputs are still created and can be charted in Power BI or Excel.
+
+## Files Created By This Script
 
 - `artifacts/python_analysis/city_profitability_summary.csv`
 - `artifacts/python_analysis/discount_retention_summary.csv`
 - `artifacts/python_analysis/top_zone_risk_summary.csv`
 - `artifacts/python_analysis/customer_segment_summary.csv`
 - `artifacts/python_analysis/repeat_score_sample.csv`
+- `artifacts/python_analysis/figures/gross_profit_by_city.png`
+- `artifacts/python_analysis/figures/repeat_rate_by_discount_band.png`
+- `artifacts/python_analysis/figures/top_delay_hotspots.png`

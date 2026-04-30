@@ -1,99 +1,196 @@
 # Food Delivery Profitability Analysis
 
-## Project Snapshot
+## Project Overview
 
-End-to-end data analytics project for a fast-growing food delivery platform operating across major Indian cities. The analysis reviews profitability, discount efficiency, customer retention, delivery delays, ratings, and restaurant-zone performance.
+This repository contains an end-to-end analytics project for a food delivery platform operating across major Indian cities. It analyzes order profitability, discount efficiency, customer retention, delivery delays, ratings, restaurant-zone performance, and repeat-order behavior using Python, SQL, Excel, and Power BI-ready outputs.
 
-The project is designed for quick recruiter review: it includes cleaned and raw datasets, Python analysis, SQL queries, Excel workbook outputs, Power BI-ready files, and business recommendations.
+Key capabilities:
 
-## Business Problem
+- Clean raw food delivery order data into an analysis-ready dataset.
+- Generate profitability, discount, city, zone, customer, and retention summaries.
+- Run SQL queries for repeatable business analysis.
+- Produce Excel workbook outputs for KPI review.
+- Export Power BI-ready CSV files.
+- Create Python analysis artifacts and summary reports.
+- Document business insights and recommended operational actions.
 
-The platform has strong growth, but not every order is equally valuable. Some customers order often but only with high discounts. Some restaurant and zone combinations create repeated delays. Late deliveries appear to reduce ratings, and lower ratings can weaken repeat behaviour.
+## Architecture
 
-## Business Value
+```mermaid
+flowchart LR
+    raw["Raw order dataset"]
+    cleaning["Python cleaning scripts"]
+    processed["Processed dataset"]
+    analysis["Python analysis and notebooks"]
+    sql["SQL analysis"]
+    excel["Excel workbook"]
+    powerbi["Power BI-ready files"]
+    insights["Insights and recommendations"]
 
-This project shows how a data analyst can turn messy operating data into practical decisions for commercial, operations, and customer teams. The analysis focuses on where the company earns margin, where discounts may be wasteful, and which delivery issues should be fixed first.
-
-## Data Source
-
-The dataset is synthetic and was created for this portfolio case study. It is designed to behave like realistic food delivery operating data, with order-level revenue, discount, delivery, customer, restaurant, rating, and repeat-order fields. This approach keeps the project public and shareable while still allowing meaningful cleaning, analysis, SQL, Excel, and Power BI work.
-
-## Tools Used
-
-- Python for cleaning, wrangling, EDA, statistics, segmentation, and ML basics
-- SQL for repeatable business analysis
-- Power BI for dashboard design and Power BI-ready reporting files
-- Excel for validation, pivots, KPI review, and workbook analysis
-- GitHub for project packaging
-
-## Key Outputs
-
-- Excel workbook: `excel/food_delivery_profitability_workbook.xlsx`
-- Power BI-ready dataset: `powerbi/powerbi_ready_files/food_delivery_cleaned_for_powerbi.csv`
-- Main Python analysis file: `scripts/05_full_python_analysis.py`
-- Supporting Python scripts: `scripts/`
-- Jupyter notebooks: `notebooks/`
-- SQL analysis: `sql/`
-- Business insights and recommendations: `insights/`
-
-## Repository Structure
-
-```text
-food-delivery-profitability-analysis/
-|-- data/
-|-- notebooks/
-|-- scripts/
-|-- sql/
-|-- powerbi/
-|-- excel/
-|-- insights/
-|-- artifacts/
+    raw --> cleaning
+    cleaning --> processed
+    processed --> analysis
+    processed --> sql
+    processed --> excel
+    processed --> powerbi
+    analysis --> insights
+    sql --> insights
+    excel --> insights
+    powerbi --> insights
 ```
 
-## Key Questions Answered
+End-to-end pipeline:
 
-- Which customers and segments drive profit, not just order volume?
-- Are discounts improving retention or mainly reducing margins?
-- Which city, zone, cuisine, and restaurant patterns create delivery problems?
-- Are late deliveries linked with lower ratings and weaker repeat behaviour?
-- Which actions should operations and commercial teams prioritise first?
+1. Raw synthetic food delivery orders are stored under `data/raw`.
+2. Python scripts clean duplicate rows, inconsistent categories, missing values, timestamps, and outliers.
+3. The cleaned dataset is written to `data/processed`.
+4. Analysis scripts and notebooks calculate KPIs, profitability views, delay patterns, discount behavior, customer segments, and repeat-order signals.
+5. Outputs are exported to `artifacts`, `excel`, and `powerbi`.
+6. Findings are summarized in `insights` for future analysis and decision reuse.
 
-## Project Workflow
+## Tech Stack
 
-1. Create and review a realistic messy order dataset.
-2. Clean duplicate rows, inconsistent categories, missing values, timestamps, and outliers.
-3. Engineer profit, delay, discount, and customer behaviour features.
-4. Analyse profitability, delivery performance, discount impact, and retention patterns.
-5. Use practical statistics to test whether observed differences matter.
-6. Build customer segmentation and retention logic.
-7. Train a simple repeat-order prediction model.
-8. Translate findings into Power BI, Excel, and leadership-ready recommendations.
+| Layer | Technology | Purpose |
+|---|---|---|
+| Data cleaning | Python, pandas, NumPy | Data wrangling and feature engineering |
+| Analysis | pandas, SciPy, scikit-learn | KPI analysis, statistics, segmentation, repeat-order scoring |
+| Visualization | matplotlib, seaborn | Optional chart generation |
+| SQL | Standard SQL scripts | Repeatable business queries and schema definition |
+| Reporting | Excel workbook | KPI review, pivots, validation, workbook analysis |
+| BI serving | Power BI-ready CSV | Dataset prepared for dashboard import |
+| Documentation | Markdown | Data dictionary, insights, recommendations, chart plan |
 
-## Highlights Of Findings
+## Data Flow
 
-- High discounts improve repeat behaviour only slightly in some groups, but often reduce profit margin.
-- Delayed deliveries are linked with lower ratings, especially in dense urban zones and bad weather.
-- High-frequency customers do not always create high profit.
-- Restaurant-zone combinations are more useful for operations than restaurant rankings alone.
-- Repeat behaviour is best understood by looking at tenure, rating, discount pattern, profit quality, and delivery reliability together.
+1. Ingestion: raw food delivery records are read from `data/raw/food_delivery_raw.csv`.
+2. Processing: scripts clean data, standardize fields, handle quality issues, and engineer profit, delay, discount, and retention features.
+3. Storage: cleaned data is stored in `data/processed/food_delivery_cleaned.csv` and Power BI-ready data is stored in `powerbi/powerbi_ready_files`.
+4. Transformation: Python, SQL, and Excel produce aggregated views by city, zone, discount band, customer segment, restaurant, and retention behavior.
+5. Serving: artifacts, workbook outputs, Power BI-ready files, and insight documents provide reusable analysis outputs.
 
-## Skills Demonstrated
+## Setup Instructions
 
-- Data cleaning and wrangling
-- Python analysis and reusable scripts
-- SQL business analysis
-- Excel workbook reporting
-- Power BI dashboard planning
-- KPI design
-- Statistical reasoning
-- Customer segmentation
-- Basic machine learning for repeat-order prediction
-- Business storytelling and recommendations
+### Prerequisites
 
-## Quick Review Path
+- Python 3.11 or later
+- pip
+- Optional: Jupyter, Excel, and Power BI Desktop
 
-1. Start with `insights/executive_summary.md`.
-2. Open `excel/food_delivery_profitability_workbook.xlsx` for KPI and workbook output.
-3. Review `scripts/05_full_python_analysis.py` for the main Python analysis.
-4. Check `sql/analysis_queries.sql` and `sql/advanced_queries.sql` for SQL depth.
-5. Use `powerbi/powerbi_ready_files/food_delivery_cleaned_for_powerbi.csv` as the source for the Power BI `.pbix` dashboard.
+### Environment Variables
+
+No environment variables are required. `.env` is ignored for local experimentation.
+
+### Docker Setup
+
+Docker is not required. The project runs with local Python tooling.
+
+### Local Run Steps
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the full Python analysis:
+
+```bash
+python scripts/05_full_python_analysis.py
+```
+
+Optional workbook generation:
+
+```bash
+python scripts/build_excel_workbook.py
+```
+
+## Project Structure
+
+```text
+.
+|-- data/
+|   |-- raw/                         # Source order dataset
+|   |-- processed/                   # Cleaned analysis dataset
+|   |-- reference/                   # Data dictionary
+|-- scripts/                         # Cleaning, analysis, statistics, ML, workbook scripts
+|-- notebooks/                       # Exploratory notebooks by analysis stage
+|-- sql/                             # Schema and business analysis queries
+|-- excel/                           # Workbook plan and generated workbook
+|-- powerbi/                         # Power BI-ready CSV outputs
+|-- insights/                        # Executive summary, business insights, recommendations
+|-- artifacts/
+|   |-- analysis_outputs/            # Aggregated summary CSVs
+|   |-- python_analysis/             # Python-generated outputs and summary report
+|   |-- dashboard-chart-plan.md      # Dashboard chart planning notes
+|   |-- sample-kpi-snapshot.md       # KPI snapshot artifact
+```
+
+## Key Components
+
+### ETL Pipeline
+
+The ETL pipeline is file-based:
+
+- Extract: read raw CSV files from `data/raw`.
+- Transform: clean, standardize, and engineer analytical fields through Python scripts.
+- Load: write processed CSVs and analysis outputs to `data/processed`, `artifacts`, and `powerbi`.
+
+### Streaming Pipeline
+
+No streaming pipeline is implemented. A future version could consume order events, delivery updates, and customer interactions from a message broker for near-real-time profitability monitoring.
+
+### dbt Models
+
+No dbt project is included. If the data moves into a warehouse, useful models would include `stg_orders`, `fct_order_profitability`, `fct_delivery_performance`, `dim_customer_segment`, and `mart_city_zone_profitability`.
+
+### API Layer
+
+No API layer is included. Outputs are served as files for Python, SQL, Excel, and Power BI workflows.
+
+### Data Quality Checks
+
+Current quality work is handled in scripts and analysis review. Important checks include duplicate order IDs, missing timestamps, invalid delivery durations, negative revenue or cost values, inconsistent city/zone/category labels, and outlier discount behavior.
+
+## Testing
+
+There is no formal automated test suite yet. Current verification is script-based:
+
+```bash
+python scripts/01_clean_data.py
+python scripts/05_full_python_analysis.py
+python scripts/build_excel_workbook.py
+```
+
+Recommended future tests:
+
+- Validate required columns in raw and processed datasets.
+- Assert no duplicate `order_id` values.
+- Assert non-negative revenue, cost, discount, and delivery-time fields.
+- Confirm generated output files are created with expected columns.
+
+## Troubleshooting
+
+| Issue | Fix |
+|---|---|
+| `ModuleNotFoundError` | Activate the virtual environment and run `pip install -r requirements.txt` |
+| File path errors | Run scripts from the repository root |
+| Power BI import has missing columns | Regenerate `powerbi/powerbi_ready_files/food_delivery_cleaned_for_powerbi.csv` |
+| Excel workbook is stale | Re-run `python scripts/build_excel_workbook.py` |
+| Charts are not generated | Confirm `matplotlib` is installed; scripts still run without optional chart output |
+
+## Future Improvements
+
+- Add automated data quality tests.
+- Add a lightweight orchestration script for the full pipeline.
+- Add dbt models if the dataset is moved into a warehouse.
+- Add Power BI `.pbix` source control guidance.
+- Add a reproducible Docker environment for analytics runs.
+- Add model evaluation notes for repeat-order prediction.
+- Add scheduled refresh documentation for dashboard outputs.
